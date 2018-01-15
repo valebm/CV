@@ -4,17 +4,46 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 header{
 	background-image: url(images/banner.jpg);
 	background-repeat: no-repeat;
-	height: 16rem;
-	height:100%;
+	height:100vh;
   	width:100%;
   	overflow:hidden;
 }
 
-.infp{
+img.infp{
     max-width: 20%;
     height: auto;
 	
 }
+
+.section{
+    position:relative;
+	height:100vh;
+}
+
+img.seccion-negro{
+    max-width: 90%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 20%;
+    margin:auto;
+}
+
+
+.slide{
+    margin-left: 20%;
+    margin-top: 50%;
+}
+
+img.seccion-blanco{
+    max-width: 90%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right: 20%;
+    margin:auto;
+}
+
 
 .row-experiencia{
 	background: white;
@@ -56,21 +85,21 @@ h3.name{
     letter-spacing: 2rem; /* Adjust as needed */
     margin:  0 auto;
     animation: 
-    typing 3s steps(15, end),
+    typing 3s steps(16, end),
     blink-caret .75s step-end infinite;
 }
 
 h4.seccion-negro{
-	font-size: 400%;
+	font-size: 600%;
 	font-family: 'Share Tech Mono', monospace;
-	margin-top: 5rem;
+	margin-top: 7rem;
 }
 
 h4.seccion-blanco{
-	font-size: 400%;
+	font-size: 600%;
 	font-family: 'Share Tech Mono', monospace;
+	margin-top: 7rem;
 	color: white;
-	margin-top: 5rem;
 }
 
 .navbar{
@@ -115,80 +144,7 @@ p{
 
 }
 
-.monitor{
-	margin-top: 15%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	background-image: url(images/monitor.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center; 
-	position: relative;
-	height: 7rem;
-	width: 7rem;
-}
 
-.flower{
-	margin-top: 75%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	background-image: url(images/cup1.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center; 
-	height: 3rem;
-	width: 3rem;
-	animation-name: cup_change;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.flower-left{
-	margin-left:60%;
-}
-
-
-.desk{
-	background: #587498;
-	margin-bottom: 4rem;
-	padding: 1rem;
-}
-
-.col-2{
-	background: #CCD5E6;
-}
-
-
-
-.screen{
-   position: absolute;
-   margin-top: 15%;
-   display: block;
-   margin-left: 10%;
-   width: 5rem;
-   height: 3rem;
-   animation-name: color_change;
-   animation-duration: 7s;
-   animation-delay: 5s;
-   animation-fill-mode: both;
-   animation-iteration-count: infinite;
-}
-
-
-@keyframes color_change {
-	from { background-color: #003333; }
-	to { background-color: #669999; }
-}
-
-@keyframes cup_change {
-	from { 	background-image: url(images/cup1.png); }
-	to { 	background-image: url(images/cup2.png); }
-}
 
 /* The typing effect */
 @keyframes typing {
@@ -203,30 +159,13 @@ p{
 }
 
 .animated { 
-    animation-duration: 1s; 
-    animation-fill-mode: both; 
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: tada 3.5s ease-in-out forwards infinite;
+    animation: tada 3.5s ease-in-out forwards infinite;
 } 
 
-@keyframes bounceInUp { 
-    0% { 
-        opacity: 0; 
-        transform: translateY(2000px); 
-    } 
-    60% { 
-        opacity: 1; 
-        transform: translateY(-30px); 
-    } 
-    80% { 
-        transform: translateY(10px); 
-    } 
-    100% { 
-        transform: translateY(0); 
-    } 
-} 
 
-.bounceInUp { 
-    animation-name: bounceInUp; 
-}
 
 @-webkit-keyframes swinging{
     0%{-webkit-transform: rotate(10deg);}
