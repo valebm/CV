@@ -10,12 +10,33 @@ header{
   	overflow:hidden;
 }
 
-.row-1{
-	background-image: url(images/patt.png);
-	background-repeat: no-repeat;
-	background-position: center; 
-
+.infp{
+    max-width: 20%;
+    height: auto;
+	
 }
+
+.row-experiencia{
+	background: white;
+}
+
+.row-estudios{
+	background: #FF3333;
+}
+
+.row-idiomas{
+	background: white;
+}
+
+.row-habilidades{
+	background: #003333;
+}
+
+
+.row-actividades{
+	background: #669999;
+}
+
 
 .col-head{
 	display: block;
@@ -28,18 +49,67 @@ h3.name{
 	display: inline-block;
 	font-size: 600%;
 	color: white;
-	font-family: monospace;
+	font-family: 'Share Tech Mono', monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .3rem solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: 1.5rem; /* Adjust as needed */
+    letter-spacing: 2rem; /* Adjust as needed */
     margin:  0 auto;
     animation: 
-    typing 3s steps(16, end),
+    typing 3s steps(15, end),
     blink-caret .75s step-end infinite;
-    
-
 }
+
+h4.seccion-negro{
+	font-size: 400%;
+	font-family: 'Share Tech Mono', monospace;
+	margin-top: 5rem;
+}
+
+h4.seccion-blanco{
+	font-size: 400%;
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+	margin-top: 5rem;
+}
+
+.navbar{
+	background: white;
+	opacity: 0.7;
+	display: inline-block;
+	float: right;
+	margin-top:4%;
+}
+
+
+
+.barra ul li {
+	display: inline;
+	float:right;
+}
+
+.barra ul li a{
+	color: #272822;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.affix {
+	margin-top: 0;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 9999 !important;
+}
+
+.affix-top {
+    position: static;
+    top: -35px;
+}
+
+
 
 p{
 

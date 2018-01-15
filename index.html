@@ -3,13 +3,17 @@
 <head>
 <title>CV</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 <link rel="stylesheet" href="main.css" />
 <link rel="stylesheet" href="normalize.css" />
 <link rel="stylesheet" href="animate.css" />
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
 </head>
 <body>
-	<header>
+	<header id="datos">
 		<div class="row">
 			<div class="col col-head">
 				<h3 class="name">Valeria Bolaños</h3>
@@ -17,13 +21,33 @@
 		</div>
 		<div class="row">
 			<div class="col offset-md-2 avatar">
-				<img class="swingimage" src="images/avatar.png" />
+				<img class="swingimage infp" src="images/infp.png" />
 			</div>
 		</div>
+		<div class="row">
+			<div class="col barra">
+	            <nav class="navbar justify-content-end navbar-default" data-spy="affix" data-offset-top="600">
+	  				<ul class="nav-pills flex-column flex-sm-row">
+		                <li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="#habilidades">Habilidades</a></li>
+		                <li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="#idiomas">Idiomas</a></li>
+		                <li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="#estudios">Estudios Realizados</a></li>
+		                <li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="#experiencia">Experiencia Laboral</a></li>
+		                <li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="#datos">Datos Personales</a></li>
+		              </ul>
+				</nav>
+    		</div>
+		</div>
 	</header>
-	<br>
     <div class="container-fluid">
-    	<div class="row row-1">
+    	<div id="experiencia" class="row row-experiencia">
+    		<div class="col-md-4">
+    			<img class="swingimage" src="images/checklist.png" />
+    		</div>
+    		<div class="col-md-7 offset-md-1">
+    			<h4 class="seccion-negro">Experiencia Laboral</h4>
+    		</div>
+    	</div>
+    	<div class="row ">
       		<div class="col-md-3 offset-md-1 col-1">
 				<div class="row desk">
 					<div class="col-md-6 offset-md-1 col-monitor">
@@ -49,34 +73,34 @@
 						</div>					
 					</div>
 				</div>
-				<div class="row desk">
-					<div class="col-md-6 offset-md-1 col-monitor">
-						<div class= "row monitor"> 
-							<div class="screen"></div>
-						</div>					
-					</div>
-					<div class="col-md-2 col-monitor">
-						<div class= "row"> 
-							<div class="flower"></div>
-						</div>					
-					</div>
-				</div>
-				<div class="row desk">
-					<div class="col-md-2 col-monitor">
-						<div class= "row"> 
-							<div class="flower flower-left"></div>
-						</div>					
-					</div>
-					<div class="col-md-6 offset-md-1 col-monitor">
-						<div class= "row monitor"> 
-							<div class="screen"></div>
-						</div>					
-					</div>
-				</div>
       		</div>
-      		<div class="col-md-6 offset-md-1 col-2">
-				<p>hola</p>
-      		</div>
+    	</div>
+    	<div id="estudios" class="row row-estudios">
+    		<div class="col-md-4">
+    			<img class="swingimage" src="images/icons.png" />
+    		</div>
+    		<div class="col-md-7 offset-md-1">
+    			<h4 class="seccion-blanco">Estudios Realizados</h4>
+    		</div>
+    	</div>
+    	<div id="idiomas" class="row row-idiomas">
+    		<div class="col-md-4">
+    			<img class="swingimage" src="images/language.png" />
+    		</div>
+    		<div class="col-md-7 offset-md-1">
+    			<h4 class="seccion-negro">Idiomas</h4>
+    		</div>
+    	</div>
+    	<div id="habilidades" class="row row-habilidades">
+    		<div class="col-md-4">
+    			<img class="swingimage" src="images/ruby.png" />
+    		</div>
+    		<div class="col-md-7 offset-md-1">
+    			<h4 class="seccion-blanco">Habilidades</h4>
+    		</div>
+    	</div>
+    	<div id="actividades" class="row row-actividades">
+
     	</div>
     </div>
 </body>
