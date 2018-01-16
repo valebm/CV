@@ -3,9 +3,8 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 
 header{
 	background-image: url(images/banner.jpg);
-	background-repeat: no-repeat;
-	height:100vh;
-  	width:100%;
+	background-position: center;
+	min-height:100vh;
   	overflow:hidden;
 }
 
@@ -17,7 +16,7 @@ img.infp{
 
 .section{
     position:relative;
-	height:100vh;
+	min-height:100vh;
 }
 
 img.seccion-negro{
@@ -75,9 +74,10 @@ img.seccion-blanco{
 }
 
 h3.name{
-	display: block;
+	display: inline-block;
 	font-size: 600%;
 	color: white;
+	margin-right:0;
 	font-family: 'Share Tech Mono', monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .3rem solid white; /* The typwriter cursor */
@@ -95,6 +95,11 @@ h3.comment{
 	font-family: 'Share Tech Mono', monospace;
 	margin-top: 3.5rem;
 	margin-bottom: 3.5rem;
+}
+
+.white-letters{
+	color: white;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 h4.seccion-negro{
@@ -155,11 +160,10 @@ h4.seccion-blanco{
 .badge{
 	font-size:100%;
 }
+
 .barra{
 	position: absolute;
 	bottom : 0;
-	right : 0;
-	left:0;
 }
 
 
@@ -188,13 +192,6 @@ h4.seccion-blanco{
     position: static;
     top: -35px;
 }
-
-
-
-p{
-
-}
-
 
 
 /* The typing effect */
@@ -264,8 +261,17 @@ p{
     width: 100%;
 }
 
-ul.lang { list-style-image: url("images/check.png"); }
-ul.data { list-style-image: url("images/success.png"); }
+ul.lang { 
+	list-style-image: url("images/check.png"); 
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 115%;
+	font-weight: bold;
+}
+ul.data { 
+	list-style-image: url("images/success.png"); 
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 115%;
+}
 
 
 .ch-grid {
@@ -328,7 +334,7 @@ ul.data { list-style-image: url("images/success.png"); }
 	margin: 0 30px;
 	padding: 45px 0 0 0;
 	height: 140px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Share Tech Mono', monospace;
 	text-shadow: 
 		0 0 1px #fff, 
 		0 1px 2px rgba(0,0,0,0.3);
@@ -337,9 +343,9 @@ ul.data { list-style-image: url("images/success.png"); }
 .ch-info p {
 	color: #fff;
 	padding: 10px 5px;
-	font-style: italic;
+	font-family: 'Share Tech Mono', monospace;
 	margin: 0 30px;
-	font-size: 12px;
+	font-size: 18px;
 	border-top: 1px solid rgba(255,255,255,0.5);
 	opacity: 0;
 	transition: all 1s ease-in-out 0.4s;
@@ -369,10 +375,10 @@ ul.data { list-style-image: url("images/success.png"); }
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 9px;
+	font-size: 15px;
 	letter-spacing: 1px;
 	padding-top: 4px;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .ch-info p a:hover {
